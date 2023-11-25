@@ -2,12 +2,6 @@ body {
     margin: 0;
 }
 
-.topIntro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .topContent {
     display: flex;
     flex-wrap: wrap;
@@ -15,11 +9,12 @@ body {
     text-align: center;
     justify-content: center;
     height: 100vh;
+    min-height: 700px;
     background-color: #F5FCFF;
 }
 
 .topTextSection {
-    /* width: 27%; */
+    margin-top: 0px;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
@@ -32,10 +27,26 @@ body {
 .greenSpan{
     color: #0292B1;
 }
-
-.topImageSection{
-
-}
 .topImage{
     width: 70%;
+}
+
+.landingFirstSection{
+    height: 1000px;
+}
+.landingSecondSection{
+    height: 1000px;
+    background-color: #F5FCFF;
+}
+.landingThirdSection{
+    height: 1000px;
+}
+
+@media (max-width: 804px) {
+    .topTextSection {
+        margin-top: 100px; /* Adjust the margin as needed */
+    }
+    .topImage{
+        width: 50%;
+    }
 }

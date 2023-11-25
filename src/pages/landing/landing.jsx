@@ -5,24 +5,33 @@ import LaptopFire from "../../assets/laptopFire.png"
 
 function Landing(){
 
-    const [clicked, setClicked] = useState(false)
+    console.log(window.screen.availHeight)
 
     return (
         <div>
             <NavBar></NavBar>
-            <div className={Styles.topContent}>
+            <div className={Styles.topContent} >
                 <div className={ Styles.topTextSection }>
                     <p className={ Styles.helloText }>Hello, I'm Matt</p>
                     <h1>A <span className={ Styles.greenSpan }>full-stack </span><br/>developer based<br/>in London</h1>
-                    <p className={ Styles.skillsSpan }>HTML | NodeJS | Javascript | Swift<br/>CSS | SwiftUI/UIKit | React<br/>SQL | MongoDB </p>
+                    <p className={ Styles.skillsSpan }>HTML | CSS | Javascript | NodeJS<br/>Swift | SwiftUI/UIKit | React<br/>SQL | MongoDB </p>
                 </div>
                 <div className={ Styles.topImageSection }>
                     <img className={ Styles.topImage } src={LaptopFire} alt="fire" />
                 </div>
             </div>
-            <div className={ Styles.landingMiddle }>
-                <div className={Styles.middleSkills}>
 
+            
+            <div className={ Styles.landingFirstSection }>
+                <div className={Styles.firstSkills}>
+                </div>
+            </div> 
+            <div className={ Styles.landingSecondSection }>
+                <div className={Styles.middleSkills}>
+                </div>
+            </div> 
+            <div className={ Styles.landingThirdSection }>
+                <div className={Styles.middleSkills}>
                 </div>
             </div> 
         </div>

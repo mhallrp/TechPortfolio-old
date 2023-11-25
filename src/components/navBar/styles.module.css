@@ -32,6 +32,11 @@
     padding: 0px 22px;
     font-weight: 400;
 }
+
+.buttonSelected{
+    color: #0292B1;
+}
+
 .navTitle {
     font-size: 22px;
     margin-right:auto;
