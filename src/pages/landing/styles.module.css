@@ -1,0 +1,12 @@
+body{
+    margin:0;
+}
+
+.landingTop{
+    height: 100vh;
+    background-color: #F5FCFF;
+}
+
+.landingMiddle{
+    height: 100vh;
+}
