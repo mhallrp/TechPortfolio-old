@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/TechPortfolio/static/css/main.57a2ed8a.css",
-    "main.js": "/TechPortfolio/static/js/main.06b149f7.js",
+    "main.css": "/TechPortfolio/static/css/main.8fcdd243.css",
+    "main.js": "/TechPortfolio/static/js/main.dad1c14f.js",
+    "static/media/laptopFire.png": "/TechPortfolio/static/media/laptopFire.7a03e294903d53d3643f.png",
     "index.html": "/TechPortfolio/index.html",
-    "main.57a2ed8a.css.map": "/TechPortfolio/static/css/main.57a2ed8a.css.map",
-    "main.06b149f7.js.map": "/TechPortfolio/static/js/main.06b149f7.js.map"
+    "main.8fcdd243.css.map": "/TechPortfolio/static/css/main.8fcdd243.css.map",
+    "main.dad1c14f.js.map": "/TechPortfolio/static/js/main.dad1c14f.js.map"
   },
   "entrypoints": [
-    "static/css/main.57a2ed8a.css",
-    "static/js/main.06b149f7.js"
+    "static/css/main.8fcdd243.css",
+    "static/js/main.dad1c14f.js"
   ]
 }
