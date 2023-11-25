@@ -6,6 +6,25 @@ body{
     height: 100vh;
     background-color: #F5FCFF;
 }
+.topIntro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh; /* Set the height of the grid */
+}
+.topIntro div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #AED6F1; /* First column color */
+}
+.topIntro div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5B7B1; /* Second column color */
+}
 
 .landingMiddle{
     height: 100vh;

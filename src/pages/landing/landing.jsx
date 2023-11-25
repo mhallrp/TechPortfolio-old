@@ -10,9 +10,12 @@ function Landing(){
         <div>
             <NavBar></NavBar>
             <div className={ Styles.landingTop }>
+                <div className={Styles.topIntro}>
+                    <div><h1>ABOUT ME</h1></div>
+                    <div><h1>IMAGE</h1></div>
+                </div>
             </div>
             <div className={ Styles.landingMiddle }>
-                
             </div>
         </div>
     )
