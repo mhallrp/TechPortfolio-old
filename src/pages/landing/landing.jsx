@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Styles from './styles.module.css'
 import NavBar from "../../components/navBar";
+import LaptopFire from "../../assets/laptopFire.png"
 
 function Landing(){
 
@@ -9,20 +10,27 @@ function Landing(){
     return (
         <div>
             <NavBar></NavBar>
-            <div className={ Styles.landingTop }>
-                <div className={Styles.topIntro}>
-                    <div><h1>ABOUT ME</h1></div>
-                    <div><h1>IMAGE</h1></div>
+            <div className={Styles.topContent}>
+                <div className={ Styles.topTextSection }>
+                    <p className={ Styles.helloText }>Hello, I'm Matt</p>
+                    <h1>A <span className={ Styles.greenSpan }>full-stack </span><br/>developer based<br/>in London</h1>
+                    <p className={ Styles.skillsSpan }>HTML | NodeJS | Javascript | Swift<br/>CSS | SwiftUI/UIKit | React<br/>SQL | MongoDB </p>
+                </div>
+                <div className={ Styles.topImageSection }>
+                    <img className={ Styles.topImage } src={LaptopFire} alt="fire" />
                 </div>
             </div>
             <div className={ Styles.landingMiddle }>
-            <div className={Styles.middleSkills}>
-                    <div><h1>ABOUT ME</h1></div>
-                    <div><h1>IMAGE</h1></div>
+                <div className={Styles.middleSkills}>
+
                 </div>
-            </div>
+            </div> 
         </div>
     )
 }
 
-export default Landing
+export default Landing;
+
+
+
+

@@ -2,7 +2,14 @@ import React, { useEffect } from "react";
 import Styles from './styles.module.css'
 
 function NavBar() {
-    useEffect(() => {
+
+    const sum = () => {
+       return 1 + 1
+    }
+
+    console.log(sum())
+
+    useEffect( () => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
             const navbarHeight = Math.max(60, 80 - scrollY / 3); // Calculate the new height

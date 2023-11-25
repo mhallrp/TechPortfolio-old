@@ -2,3 +2,7 @@ button{
     background-color: white;
     border: none;
 }
+
+h1{
+    margin: 0;
+}
