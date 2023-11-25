@@ -10,20 +10,23 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh; /* Set the height of the grid */
+    /* font-family: 'Montserrat', sans-serif; */
 }
 .topIntro div:first-child {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #AED6F1; /* First column color */
+    background-color: #AED6F1;
+    margin: 165px 42.5px 85px 85px;
 }
 .topIntro div:last-child {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #F5B7B1; /* Second column color */
+    background-color: #F5B7B1;
+    margin: 165px 85px 85px 42.5px;
 }
 
 .landingMiddle{

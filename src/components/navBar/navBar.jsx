@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Styles from './styles.module.css'
 
 function NavBar() {
-    const [navBarHeight, setNavBarHeight] = useState(100); // Initial height
-
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const newHeight = Math.max(60, 100 - scrollY / 5); // Calculate the new height
-            setNavBarHeight(newHeight);
+            const navbarHeight = Math.max(60, 80 - scrollY / 3); // Calculate the new height
+            document.documentElement.style.setProperty('--nav-bar-height', `${navbarHeight}px`);
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -17,10 +15,10 @@ function NavBar() {
     }, []);
 
     return (
-        <div className={ Styles.navBar } style={ { height: `${navBarHeight}px` } }>
+        <div className={Styles.navBar}>
     <div className={ Styles.navSection }>
         <div className={ Styles.leftSection }>
-            <h1 className={ Styles.navTitle } >Matt Hall</h1>
+            <h1 className={ Styles.navTitle } >MATT HALL</h1>
         </div>
         <div className={ Styles.centerSection }>
             <button>Home</button>

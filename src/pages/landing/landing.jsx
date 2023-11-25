@@ -16,6 +16,10 @@ function Landing(){
                 </div>
             </div>
             <div className={ Styles.landingMiddle }>
+            <div className={Styles.middleSkills}>
+                    <div><h1>ABOUT ME</h1></div>
+                    <div><h1>IMAGE</h1></div>
+                </div>
             </div>
         </div>
     )
