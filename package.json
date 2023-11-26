@@ -19,7 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://mhallrp.github.io/TechPortfolio",
+  "homepage": "https://matthall.london",
   "eslintConfig": {
     "extends": [
       "react-app",
