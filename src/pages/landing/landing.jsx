@@ -16,11 +16,8 @@ function Landing(){
                     <h1>A <span className={ Styles.greenSpan }>full-stack </span><br/>developer based<br/>in London</h1>
                     <p className={ Styles.skillsSpan }>HTML | CSS | Javascript | NodeJS<br/>Swift | SwiftUI/UIKit | React<br/>SQL | MongoDB </p>
                 </div>
-                <div className={ Styles.topImageSection }>
                     <img className={ Styles.topImage } src={LaptopFire} alt="fire" />
-                </div>
             </div>
-
             
             <div className={ Styles.landingFirstSection }>
                 <div className={Styles.firstSkills}>

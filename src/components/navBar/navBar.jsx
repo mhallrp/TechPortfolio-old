@@ -2,27 +2,23 @@ import React, { useEffect, useState } from "react";
 import Styles from './styles.module.css';
 
 function NavBar() {
+    
     const [navbarHeight, setNavbarHeight] = useState(80);
-
     const [activeSection, setActiveSection] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
             const halfViewportHeight = window.innerHeight / 2;
-
-            // Determine the active section based on scroll position
             if (scrollY <= halfViewportHeight) {
-                setActiveSection(0); // Assuming "Portfolio" is the second button
+                setActiveSection(0);
             } else if  (scrollY <= halfViewportHeight + 1000){
-                setActiveSection(1); // Back to "Home"
+                setActiveSection(1);
             } else if  (scrollY <= halfViewportHeight + 2000){
-                setActiveSection(2); // Back to "Home"
+                setActiveSection(2);
             } else if  (scrollY <= halfViewportHeight + 3000){
-                setActiveSection(3); // Back to "Home"
+                setActiveSection(3);
             }
-
-            // Calculate the new navbar height
             const newNavbarHeight = Math.max(60, 80 - scrollY / 3);
             setNavbarHeight(newNavbarHeight);
         };

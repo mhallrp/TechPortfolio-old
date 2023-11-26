@@ -28,8 +28,10 @@ body {
     color: #0292B1;
 }
 .topImage{
-    width: 70%;
+    width: 400px;
+    margin-left: 50px;
 }
+
 
 .landingFirstSection{
     height: 1000px;
@@ -42,14 +44,11 @@ body {
     height: 1000px;
 }
 
-@media (max-width: 823px) {
+@media (max-width: 887px) {
     .topContent{
         height: fit-content;
     }
     .topTextSection {
         margin-top: 100px; /* Adjust the margin as needed */
-    }
-    .topImage{
-        width: 40%;
     }
 }
