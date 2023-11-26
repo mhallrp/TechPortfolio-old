@@ -42,7 +42,10 @@ body {
     height: 1000px;
 }
 
-@media (max-width: 804px) {
+@media (max-width: 823px) {
+    .topContent{
+        height: fit-content;
+    }
     .topTextSection {
         margin-top: 100px; /* Adjust the margin as needed */
     }
