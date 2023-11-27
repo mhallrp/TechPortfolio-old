@@ -1,53 +1,129 @@
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
+/* Top section Content */
 .topContent {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
-    justify-content: center;
     height: 100vh;
     background-color: #F5FCFF;
 }
-
 .topTextSection {
     margin-top: 0px;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Roboto', sans-serif;
+    width: calc(50% - 85px);
+    min-width: 500px;
+    margin-left: 85px;
 }
+
 .helloText{
     font-size: 20px;
+    color: #484848;
+    margin-bottom: 16px;
 }
-.skillsSpan{
+.topMainText{
+    font-weight: 700;
+    line-height: 65px;
+    margin-bottom: 16px;
+}
+.topSkills{
     font-size: 25px;
+    color: #484848;
 }
 .greenSpan{
     color: #0292B1;
 }
 .topImage{
-    width: 400px;
+    width: 500px;
     margin-left: 50px;
 }
 
-
-.landingFirstSection{
-    height: 1000px;
+/* Second section: Skills and technical overview */
+.skillsSection{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 100px 85px;
 }
-.landingSecondSection{
-    height: 1000px;
+.skillsLargeTitle{
+    font-size: 50px;
+    margin-top: 25px;
+}
+.skillCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 35px;
+}
+
+.aboutSection{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding: 100px 85px;
     background-color: #F5FCFF;
 }
-.landingThirdSection{
-    height: 1000px;
+.aboutLargeTitle{
+    font-size: 50px;
+    margin-top: 25px;
+}
+.aboutText{
+margin-top: 35px;
 }
 
-@media (max-width: 887px) {
+
+@media (max-width: 1334px) {
     .topContent{
+        flex-direction: column;
         height: fit-content;
     }
     .topTextSection {
-        margin-top: 100px; /* Adjust the margin as needed */
+        text-align: center;
+        margin: auto;
+        padding-top: 130px;
+        width: 50%;
+
     }
+    .topImage{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width:35%
+    }
+}
+
+@media (max-width: 1000px) {
+    /* Adjust text size or other styles for screens up to 1000px wide */
+    .topTextSection {
+        margin: auto;
+        padding-top: 130px;
+        min-width: 0px;
+        font-size: 25px; /* Adjust the font size as needed */
+    }
+    .topSkills{
+        font-size: 20px;
+    }
+    .topMainText{
+        line-height: 50px;
+    }
+    /* You can add more styles for other elements here */
+}
+
+@media (max-width: 525px) {
+    /* Adjust text size or other styles for screens up to 1000px wide */
+    .topTextSection {
+        margin: auto;
+        padding-top: 130px;
+        min-width: 0px;
+        font-size: 20px; /* Adjust the font size as needed */
+    }
+    .topSkills{
+        font-size: 20px;
+    }
+    .topMainText{
+        line-height: 40px;
+    }
+    /* You can add more styles for other elements here */
 }
