@@ -48,7 +48,7 @@ function Landing(){
                     <div className={Styles.topText}>
                     <p className={ Styles.helloText }>Hello, I'm Matt</p>
                     <h1 className={ Styles.topMainText }>A <span className={ Styles.greenSpan }>full-stack </span>developer based in London</h1>
-                    <p className={ Styles.topSkills }>Drawing on 3 years of expertise in front-end and back-end development, I craft innovative mobile and web applications</p>
+                    <p className={ Styles.topSkills }>Drawing from 3 years of expertise in front-end and back-end development, I craft innovative mobile and web applications</p>
                     {/* <p className={ Styles.topSkills }>HTML | CSS | Javascript | React<br/>SQL | MongoDB | NodeJS<br/>Swift | SwiftUI | UIKit</p> */}
                     </div>
                 </div>
