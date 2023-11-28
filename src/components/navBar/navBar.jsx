@@ -1,30 +1,49 @@
 import React, { useEffect, useState } from "react";
 import Styles from './styles.module.css';
 
-function NavBar(props) {
-    
+const NavBar = (props) => {
+
     const [navbarHeight, setNavbarHeight] = useState(80);
-    const [activeSection, setActiveSection] = useState(0);
+    const [activeSection, setActiveSection] = useState("topContent");
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const halfViewportHeight = window.innerHeight / 2;
-            if (scrollY <= halfViewportHeight) {
-                setActiveSection(0);
-            } else if  (scrollY <=  window.innerHeight + props.skillsSectionHeight){
-                setActiveSection(1);
-            } else if  (scrollY >= window.innerHeight + props.skillsSectionHeight){
-                setActiveSection(2);
+            let newActiveSection = null;
+            for (const sectionName in props.sections) {
+                const sectionRef = props.sections[sectionName];
+                if (sectionRef && sectionRef.current) {
+                    const sectionTop = sectionRef.current.getBoundingClientRect().top + window.scrollY;
+                    const sectionBottom = sectionRef.current.getBoundingClientRect().bottom + window.scrollY;
+                    if (window.scrollY >= sectionTop - scrollY / 2 && window.scrollY < sectionBottom) {
+                        newActiveSection = sectionName;
+                    }
+                }
             }
+            setActiveSection(newActiveSection);
             const newNavbarHeight = Math.max(60, 80 - scrollY / 3);
             setNavbarHeight(newNavbarHeight);
         };
         window.addEventListener('scroll', handleScroll);
-        return () => {
+        window.addEventListener('resize', handleScroll);
+        handleScroll();
+        return () => { 
             window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleScroll); 
         };
-    }, [props.skillsSectionHeight]);
+    }, [props.sections]);
+
+    const scrollTo = (sectionName) => {
+        const sectionRef = props.sections[sectionName];
+        if (sectionRef && sectionRef.current) {
+            const navbarHeight = 100;
+            const targetScrollPosition = sectionRef.current.getBoundingClientRect().top + window.scrollY - navbarHeight;
+            window.scrollTo({
+                top: targetScrollPosition,
+                behavior: 'smooth',
+            });
+        }
+    };
 
     return (
         <div className={Styles.navBar} style={{ height: `${navbarHeight}px` }}>
@@ -33,10 +52,10 @@ function NavBar(props) {
                     <h1 className={Styles.navTitle}>MATT HALL</h1>
                 </div>
                 <div className={Styles.centerSection}>
-                    <button className={activeSection === 0 ? Styles.buttonSelected : ""} onClick={ () => props.scrollToSection(0) }>Home</button>
-                    <button className={activeSection === 1 ? Styles.buttonSelected : ""} onClick={ () => props.scrollToSection(1) }>Skills</button>
-                    <button className={activeSection === 2 ? Styles.buttonSelected : ""}>About me</button>
-                    <button className={activeSection === 3 ? Styles.buttonSelected : ""}>Portolio</button>
+                    <button className={activeSection === "topContent" ? Styles.buttonSelected : ""} onClick={() => scrollTo("topContent")}>Home</button>
+                    <button className={activeSection === "skillsSection" ? Styles.buttonSelected : ""} onClick={() => scrollTo("skillsSection")}>Skills</button>
+                    <button className={activeSection === "aboutSection" ? Styles.buttonSelected : ""} onClick={() => scrollTo("aboutSection")}>About me</button>
+                    <button className={activeSection === "portfolioSection" ? Styles.buttonSelected : ""} onClick={() => scrollTo("portfolioSection")}>Portfolio</button>
                 </div>
                 <div className={Styles.rightSection}>
                     <button className={Styles.navContact}>Contact Me</button>
@@ -44,6 +63,6 @@ function NavBar(props) {
             </div>
         </div>
     );
-}
+};
 
 export default NavBar;

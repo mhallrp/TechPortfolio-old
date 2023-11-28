@@ -49,7 +49,7 @@ body {
     font-weight: 700;
     padding: 100px 85px;
 }
-.skillsLargeTitle{
+.largeTitle{
     font-size: 50px;
     margin-top: 25px;
 }
@@ -60,21 +60,45 @@ body {
     margin-top: 35px;
 }
 
+/* Third Section: About Me */
 .aboutSection{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     padding: 100px 85px;
-    background-color: #F5FCFF;
 }
 .aboutLargeTitle{
     font-size: 50px;
     margin-top: 25px;
 }
+.aboutData{
+    flex-wrap: wrap-reverse;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .aboutText{
-margin-top: 35px;
+    margin-top: 35px;
+    margin-right: 85px;
+    width: calc(50% - 85px);
+}
+.aboutMainText{
+    padding-top: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.mattImage{
+   padding-top: 25px;
+    width:550px;
+    margin: auto;
 }
 
+.footer{
+    height: 200px;
+    background-color: #F5FCFF;;
+}
 
+/* TOP SECTION BREAK POINT */
 @media (max-width: 1334px) {
     .topContent{
         flex-direction: column;
@@ -85,22 +109,20 @@ margin-top: 35px;
         margin: auto;
         padding-top: 130px;
         width: 50%;
-
     }
     .topImage{
         margin-top: 40px;
         margin-bottom: 40px;
-        width:35%
+        width:35%;
+        margin-right: 32px;
     }
 }
-
 @media (max-width: 1000px) {
-    /* Adjust text size or other styles for screens up to 1000px wide */
     .topTextSection {
         margin: auto;
         padding-top: 130px;
         min-width: 0px;
-        font-size: 25px; /* Adjust the font size as needed */
+        font-size: 25px;
     }
     .topSkills{
         font-size: 20px;
@@ -108,16 +130,13 @@ margin-top: 35px;
     .topMainText{
         line-height: 50px;
     }
-    /* You can add more styles for other elements here */
 }
-
 @media (max-width: 525px) {
-    /* Adjust text size or other styles for screens up to 1000px wide */
     .topTextSection {
         margin: auto;
         padding-top: 130px;
         min-width: 0px;
-        font-size: 20px; /* Adjust the font size as needed */
+        font-size: 20px;
     }
     .topSkills{
         font-size: 20px;
@@ -125,5 +144,24 @@ margin-top: 35px;
     .topMainText{
         line-height: 40px;
     }
-    /* You can add more styles for other elements here */
+}
+
+@media (max-width: 1269px) {
+.aboutData{
+    flex-direction: column;
+}
+.aboutText{
+    width: 100%;
+    margin: auto;
+}
+.mattImage{
+    order:1;
+    width: 600px;
+}
+}
+
+@media(max-width:820px){
+    .mattImage{
+        width: 80%;
+    }
 }
