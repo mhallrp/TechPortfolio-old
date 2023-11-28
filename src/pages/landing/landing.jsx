@@ -31,7 +31,6 @@ function Landing(){
             }
         };
         // Initial update
-        console.log(skillsSectionHeight)
         updateSkillsSectionHeight();
         // Add event listener for resize
         window.addEventListener('resize', updateSkillsSectionHeight);
