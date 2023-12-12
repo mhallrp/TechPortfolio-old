@@ -12,6 +12,7 @@ const Landing = () => {
     const skillsSectionRef = useRef(null);
     const aboutSectionRef = useRef(null);
 
+    
     return (
         <div>
             <NavBar
