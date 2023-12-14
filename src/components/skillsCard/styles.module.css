@@ -23,3 +23,10 @@
 .skillCard h3{
     margin-top: 10px;
 }
+
+@media (max-width:499px){
+    .skillCard h3{
+        margin-bottom: 10px;
+
+    }
+}
