@@ -66,10 +66,6 @@ body {
     font-weight: 700;
     padding: 100px 85px;
 }
-.aboutLargeTitle{
-    font-size: 50px;
-    margin-top: 25px;
-}
 .aboutData{
     flex-wrap: wrap-reverse;
     display: flex;
@@ -172,11 +168,14 @@ body {
     }
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
     .skillsSection{
-        padding:32px 16px;
+        padding:32px 32px;
     }
     .largeTitle{
         font-size: 30px;
+    }
+    .aboutSection{
+        padding:32px 32px;
     }
 }
