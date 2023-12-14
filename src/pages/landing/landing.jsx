@@ -49,11 +49,9 @@ const Landing = () => {
                     I'm now actively seeking remote junior roles in software development, with a strong desire for mentoring and growth.<br/><br/>
                     Let's connect!
                     <br/><br/>
-                    <p>
-                        🐱 <a href="https://github.com/mhallrp">GitHub</a><br/>
-                        💼 <a href="https://www.linkedin.com/in/mhallrp">LinkedIn</a><br/>
-                        📧 <a href="mailto:hello@matthall.london">hello@matthall.london</a>
-                    </p>
+                    🐱 <a href="https://github.com/mhallrp">GitHub</a><br/>
+                    💼 <a href="https://www.linkedin.com/in/mhallrp">LinkedIn</a><br/>
+                    📧 <a href="mailto:hello@matthall.london">hello@matthall.london</a>
                 </p>
                 </div>
                 </div>

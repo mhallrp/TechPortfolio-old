@@ -47,7 +47,7 @@ body {
 .skillsSection{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    padding: 100px 85px;
+    padding: 80px 85px;
 }
 .largeTitle{
     font-size: 50px;
@@ -108,7 +108,7 @@ body {
         text-align: center;
         margin: auto;
         padding-top: 130px;
-        width: 50%;
+        width: 80%;
     }
     .topImage{
         margin-top: 40px;
@@ -163,5 +163,11 @@ body {
 @media(max-width:820px){
     .mattImage{
         width: 80%;
+    }
+}
+
+@media (max-width:500px){
+    .skillsSection{
+        padding:32px 16px;
     }
 }
