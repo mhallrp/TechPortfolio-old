@@ -36,6 +36,7 @@ const Landing = () => {
                     <SkillCard image={ 3 } title="Coding & Collaboration" text="Proficient in IDEs like Visual Studio Code and Sublime Text, and versed in Git and GitHub for version control. I ensure efficient coding and team collaboration."/>
                     <SkillCard image={ 4 } title="Design & Ops" text="Utilizing Figma for intuitive UI/UX design and Docker for streamlined DevOps, I deliver designs with technical efficiency, ensuring both aesthetics and robust functionality."/>
                 </div>
+                
             </Section>
             <Section ref={ aboutSectionRef } className={ Styles.aboutSection }>
             <div className={ Styles.aboutData }>
