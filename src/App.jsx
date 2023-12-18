@@ -1,9 +1,9 @@
 import Landing from './pages/landing/Index';
 
-function App() {
+const App = () => {
   return (
     <div>
-      < Landing />
+      <Landing />
     </div>
   );
 }
