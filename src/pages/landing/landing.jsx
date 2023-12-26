@@ -4,7 +4,6 @@ import NavBar from "../../Components/NavBar";
 import LaptopFire from "../../assets/laptopFire.png"
 import MattImage from "../../assets/mattImage.png"
 import SkillCard from "../../Components/SkillsCard";
-import Section from "./Section";
 
 const Landing = () => {
 
@@ -17,7 +16,7 @@ const Landing = () => {
             <NavBar
                 sections={{ topContent: topContentRef, skillsSection: skillsSectionRef, aboutSection: aboutSectionRef, }}
             />
-            <Section className={Styles.topContent} ref={topContentRef}>
+            <section className={Styles.topContent} ref={topContentRef}>
                 <div className={ Styles.topTextSection }>
                     <div className={Styles.topText}>
                     <p className={ Styles.helloText }>Hello, I'm Matt</p>
@@ -26,8 +25,8 @@ const Landing = () => {
                     </div>
                 </div>
                 <img className={ Styles.topImage } src={LaptopFire} alt="fire" />
-            </Section>
-            <Section ref={ skillsSectionRef } className={ Styles.skillsSection }>
+            </section>
+            <section ref={ skillsSectionRef } className={ Styles.skillsSection }>
                 <p>My skills</p>
                 <p className={ Styles.largeTitle }>Technical Expertise</p>
                 <div className={ Styles.skillCards }>
@@ -36,27 +35,27 @@ const Landing = () => {
                     <SkillCard image={ 3 } title="Coding & Collaboration" text="Proficient in IDEs like Visual Studio Code and Sublime Text, and versed in Git and GitHub for version control. I ensure efficient coding and team collaboration."/>
                     <SkillCard image={ 4 } title="Design & Ops" text="Utilizing Figma for intuitive UI/UX design and Docker for streamlined DevOps, I deliver designs with technical efficiency, ensuring both aesthetics and robust functionality."/>
                 </div>
-            </Section>
-            <Section ref={ aboutSectionRef } className={ Styles.aboutSection }>
-            <div className={ Styles.aboutData }>
-                <img className={ Styles.mattImage } src={ MattImage } alt="Matt Hall" />
-                <div className={ Styles.aboutText }>
-                <p>About</p>
-                <p className={ Styles.largeTitle }>About me</p>
-                <p className={ Styles.aboutMainText }>
-                    In 2019, I decided to leave my 10+ years of experience in network security behind me to dive into the world of software development. I began with mobile app development utilising the Swift for IoS programming language and both the SwiftUI and UIKit frameworks for front-end and both PhP and mySQL for backend, and I'm proud to have launched multiple apps on the Apple App Store.<br/><br/>
-                    Today, I'm focused more on web development, delving into technologies like HTML/CSS, JavaScript, Node.js and React. My current project involves building a web3 job search and recruitment platform for a Web3.0 platform.<br/><br/>
-                    I'm now actively seeking remote junior roles in software development, with a strong desire for mentoring and growth.<br/><br/>
-                    Let's connect!
-                    <br/><br/>
-                    🐱 <a href="https://github.com/mhallrp">GitHub</a><br/>
-                    💼 <a href="https://www.linkedin.com/in/mhallrp">LinkedIn</a><br/>
-                    📧 <a href="mailto:hello@matthall.london">hello@matthall.london</a>
-                </p>
+            </section>
+            <section ref={ aboutSectionRef } className={ Styles.aboutSection }>
+                <div className={ Styles.aboutData }>
+                    <img className={ Styles.mattImage } src={ MattImage } alt="Matt Hall" />
+                    <div className={ Styles.aboutText }>
+                    <p>About</p>
+                    <p className={ Styles.largeTitle }>About me</p>
+                    <p className={ Styles.aboutMainText }>
+                        In 2019, I decided to leave my 10+ years of experience in network security behind me to dive into the world of software development. I began with mobile app development utilising the Swift for IoS programming language and both the SwiftUI and UIKit frameworks for front-end and both PhP and mySQL for backend, and I'm proud to have launched multiple apps on the Apple App Store.<br/><br/>
+                        Today, I'm focused more on web development, delving into technologies like HTML/CSS, JavaScript, Node.js and React. My current project involves building a web3 job search and recruitment platform for a Web3.0 platform.<br/><br/>
+                        I'm now actively seeking remote junior roles in software development, with a strong desire for mentoring and growth.<br/><br/>
+                        Let's connect!
+                        <br/><br/>
+                        🐱 <a href="https://github.com/mhallrp">GitHub</a><br/>
+                        💼 <a href="https://www.linkedin.com/in/mhallrp">LinkedIn</a><br/>
+                        📧 <a href="mailto:hello@matthall.london">hello@matthall.london</a>
+                    </p>
+                    </div>
                 </div>
-                </div>
-            </Section>
-            <Section className={ Styles.footer }></Section>
+            </section>
+            <section className={ Styles.footer }></section>
 
         </div>
     );
