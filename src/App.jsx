@@ -1,10 +1,16 @@
-import Landing from './Pages/Landing/index';
+import Landing from './Pages/Landing';
+import NewPage from './Pages/NewPage';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      <Landing />
-    </div>
+    <BrowserRouter>
+      <Routes>
+          <Route path="/new" element={ <NewPage /> }/>
+          <Route path="/" element={ <Landing /> }/>
+      </Routes>
+    </ BrowserRouter>
   );
 }
 
