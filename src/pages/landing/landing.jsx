@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import Styles from './styles.module.css'
-import NavBar from "../../components/navBar/Index";
+import NavBar from "../../Components/NavBar";
 import LaptopFire from "../../assets/laptopFire.png"
 import MattImage from "../../assets/mattImage.png"
-import SkillCard from "../../components/skillsCard/Index";
+import SkillCard from "../../Components/SkillsCard";
 import Section from "./Section";
 
 const Landing = () => {
@@ -15,7 +15,7 @@ const Landing = () => {
     return (
         <div>
             <NavBar
-                sections={{ topContent: topContentRef, skillsSection: skillsSectionRef, aboutSection: aboutSectionRef, }}
+                sections={{ topContent: topContentRef, skillsSecion: skillsSectionRef, aboutSection: aboutSectionRef, }}
             />
             <Section className={Styles.topContent} ref={topContentRef}>
                 <div className={ Styles.topTextSection }>
