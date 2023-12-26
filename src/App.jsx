@@ -1,4 +1,4 @@
-import Landing from './Pages/Landing/Index';
+import Landing from './Pages/Landing/index';
 
 const App = () => {
   return (
