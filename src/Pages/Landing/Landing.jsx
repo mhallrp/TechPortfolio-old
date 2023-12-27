@@ -43,7 +43,7 @@ const Landing = () => {
                     <p>About</p>
                     <p className={ Styles.largeTitle }>About me</p>
                     <p className={ Styles.aboutMainText }>
-                        In 2019, I decided to leave my 10+ years of experience in network security behind me to dive into the world of software development. I began with mobile app development utilising the Swift for IoS programming language and both the SwiftUI and UIKit frameworks for front-end and both PhP and mySQL for backend, and I'm proud to have launched multiple apps on the Apple App Store.<br/><br/>
+                        In 2019, I decided to leave my 10+ yearss of experience in network security behind me to dive into the world of software development. I began with mobile app development utilising the Swift for IoS programming language and both the SwiftUI and UIKit frameworks for front-end and both PhP and mySQL for backend, and I'm proud to have launched multiple apps on the Apple App Store.<br/><br/>
                         Today, I'm focused more on web development, delving into technologies like HTML/CSS, JavaScript, Node.js and React. My current project involves building a web3 job search and recruitment platform for a Web3.0 platform.<br/><br/>
                         I'm now actively seeking remote junior roles in software development, with a strong desire for mentoring and growth.<br/><br/>
                         Let's connect!
